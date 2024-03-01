@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
 import { AntDesign } from '@expo/vector-icons'; // Assuming use of Expo for icons
 
-export default function ProfileIcon({ textName, icon, onPress }) {
+export default function ProfileIcons({ textName, icon, onPress }) {
   return (
     <View style={styles.option} onPress={onPress}>
       <AntDesign name={icon} size={24} color="black" />

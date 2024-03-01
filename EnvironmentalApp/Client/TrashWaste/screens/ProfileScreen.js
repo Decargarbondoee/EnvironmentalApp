@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, ActivityIndicator } fr
 import { AntDesign, MaterialIcons } from '@expo/vector-icons';
 import getProfileData from '../services/ProfileScreenServices/services';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import ProfileIcon from '../components/profileIcons';
+import ProfileIcon from '../components/ProfileIcons';
 
 
 const ProfileScreen = ({ navigation }) => {
@@ -20,9 +20,9 @@ const ProfileScreen = ({ navigation }) => {
                 const userIdInteger = parseInt(storedUserId, 10);
                 const data = await getProfileData(userIdInteger);
                 setProfileData(data);
-                console.log("get data");
-                console.log(profileData.firstname);
-                console.log("last data ok");
+                // console.log("get data");
+                // console.log(profileData.firstname);
+                // console.log("last data ok");
             } catch (error) {
                 // Handle errors specific to fetching profile data, if necessary
                 console.error('Error fetching profile data:', error);
