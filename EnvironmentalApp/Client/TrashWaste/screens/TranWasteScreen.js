@@ -17,11 +17,11 @@ const SubscriptionScreen = () => {
         Linking.openURL(url);
     };    
     
-    // Mock data for subscription plans
+    // Mock data for subscription plans(30% cut for monthly and yearly payment)
     const subscriptionPlans = [
-        { id: 1, name: 'Basic Plan', price: '$9.99/Weekly' },
-        { id: 2, name: 'Premium Plan', price: '$19.99/month' },
-        { id: 3, name: 'Pro Plan', price: '$29.99/Yearly' },
+        { id: 1, name: 'Basic Plan', price: 'L$400/Weekly' },
+        { id: 2, name: 'Premium Plan', price: 'L$1,120/month' },
+        { id: 3, name: 'Pro Plan', price: 'L$13,440/Yearly' },
     ];
 
     // Function to navigate to subscription form with selected plan

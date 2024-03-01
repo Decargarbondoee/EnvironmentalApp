@@ -2,7 +2,6 @@ import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Button, ScrollView, Image } from 'react-native';
 import { Linking } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
@@ -21,48 +20,48 @@ const HomeScreen = ({ navigation }) => {
     };
 
     const handleGoForward = () => {
-        // Use navigation.navigate to go to the 'Profile' screen
-        navigation.navigate('Profile');
+
+        navigation.navigate('UserProfile');
     };
 
-
+// Navigate to the various screen when the image is pressed
     const handleImageMccPress = () => {
-        // Navigate to the 'Mcc' screen when the image is pressed
+        
         navigation.navigate('Mcc');
     };
 
     const handleImagePccPress = () => {
-        // Navigate to the 'Mcc' screen when the image is pressed
+        
         navigation.navigate('Pcc');
     };
 
     const handleImageDumpPilePress = () => {
-        // Navigate to the 'DumpPile' screen when the image is pressed
+        
         navigation.navigate('DumpPile');
     };
 
     const handleImageGreenCityPress = () => {
-        // Navigate to the 'GreenCity' screen when the image is pressed
+        
         navigation.navigate('GreenCity');
     };
 
     const handleImageIswaPress = () => {
-        // Navigate to the 'GreenCity' screen when the image is pressed
+        
         navigation.navigate('Iswa');
     };
 
     const handleImageLibraPress = () => {
-        // Navigate to the 'GreenCity' screen when the image is pressed
+        
         navigation.navigate('Libra');
     };
 
     const handleImageSwaPress = () => {
-        // Navigate to the 'GreenCity' screen when the image is pressed
+        
         navigation.navigate('Swa');
     };
 
     const handleImageEWastePress = () => {
-        // Navigate to the 'GreenCity' screen when the image is pressed
+        
         navigation.navigate('EWaste');
     };
 
@@ -72,12 +71,12 @@ const HomeScreen = ({ navigation }) => {
     };
 
     const handleImageTranWastePress = () => {
-        // Navigate to the 'GreenCity' screen when the image is pressed
+        
         navigation.navigate('TranWaste');
     };
 
     const handleImageCityAlliancePress = () => {
-        // Navigate to the 'GreenCity' screen when the image is pressed
+        
         navigation.navigate('CityAlliance');
     };
 
